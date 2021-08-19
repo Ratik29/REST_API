@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/611e74dd2e48ff0d7ccd5d3f
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "LNMIIT"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/611e1eca54d80c26dca7d8a9
+
+###
+PATCH http://localhost:3000/subscribers/611e74dd2e48ff0d7ccd5d3f
+Content-Type: application/json
+
+{
+    "name": "NEW NAME"
+}
+
